@@ -1,0 +1,1173 @@
+@media (min-width: 901px) and (max-height: 800px) {
+    /* main block */
+    .main-image img {
+        width: 350px;
+        height: 450px;
+    }
+
+    .border-text-name {
+        width: 350px;
+        height: 450px;
+        overflow: hidden;
+        position: relative;
+        bottom: 4.55rem;
+        right: 3.1rem;
+        border: 1px rgb(160, 160, 160) solid;
+        border-radius: 32px;
+    }
+
+    .pos-text-1 {
+        font-size: 35px;
+    }
+
+    .pos-text-2 {
+        position: relative;
+        bottom: 2rem;
+        font-size: 25px;
+    }
+    /* main block end */
+}
+
+@media (min-width: 901px) and (max-height: 700px) {
+    /* main block */
+    .main-image img {
+        width: 300px;
+        height: 400px;
+    }
+
+    .border-text-name {
+        width: 300px;
+        height: 400px;
+        overflow: hidden;
+        position: relative;
+        bottom: 6.3rem;
+        right: 4.7rem;
+        border: 1px rgb(160, 160, 160) solid;
+        border-radius: 32px;
+    }
+
+    .pos-text-1 {
+        font-size: 30px;
+    }
+
+    .pos-text-2 {
+        position: relative;
+        bottom: 4rem;
+        font-size: 20px;
+    }
+    /* main block end */
+}
+
+@media (min-width: 901px) and (max-height: 600px) {
+    /* main block */
+    .main-image img {
+        width: 280px;
+        height: 350px;
+    }
+
+    .border-text-name {
+        width: 280px;
+        height: 350px;
+        overflow: hidden;
+        position: relative;
+        bottom: 7.8rem;
+        right: 5.3rem;
+        border: 1px rgb(160, 160, 160) solid;
+        border-radius: 32px;
+    }
+
+    .pos-text-1 {
+        font-size: 30px;
+        top: -6rem;
+    }
+
+    .pos-text-2 {
+        position: relative;
+        bottom: 7rem;
+        font-size: 20px;
+    }
+    /* main block end */
+}
+
+@media (max-width: 1030px) {
+    /* place-of-reg block */
+    .place-of-reg .flex-container {
+        width: 100%;
+        display: inline-block;
+    }
+
+    .plg1 {
+        margin-top: 1rem;
+        margin-left: 0;
+    }
+
+    .place-of-reg {
+        margin-top: 1rem;
+    }
+    /* place-of-reg block end */
+}
+
+
+@media (max-width: 900px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    /* main block */
+    .border-text-name {
+        display: none;
+    }
+
+    .main-image img {
+        width: 400px; height: 500px;
+    }
+
+    .main-image {
+        width: 100%; height: 100%;
+        bottom: 4rem;
+    }
+
+    .ad-els {
+        display: inline-block; position: absolute;
+    }
+
+    .name-text {
+        top: -7.4rem; font-size: 38px;
+    }
+
+    .second-text {
+        top: 28rem; font-size: 30px;
+    }
+    /* main block end */
+
+    /* main-place block */
+    .main-place .flex-container {
+        display: inline-block; width: 100%;
+    }
+
+    .location-image-regular {
+        width: 100%;
+    }
+
+    .plg2 {
+        margin-right: 0rem; margin-top: 2rem;
+    }
+
+    .location-image-regular.wide {
+        display: none;
+    }
+
+    .location-image-regular.no-wide {
+        display: inline-block;
+    }
+    /* main-place block end */
+
+    /* shedule block */
+    .of-x {
+        display: flex; width: 100%;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        padding-bottom: 4rem;
+    }
+
+    .shedule-block-1 {
+        margin-left: -12rem;
+    }
+
+    .shedule-block-2 {
+        position: relative;
+        left: 1rem; bottom: 1rem;
+    }
+
+    .shedule-img {
+        width: 350px; height: 350px;
+    }
+
+    .shedule-img img {
+        width: 450px; height: 350px;
+    }
+
+    .shedule-img .bus {
+        width: 400px;
+    }
+
+    .banquet,
+    .banquet img {
+        width: 300px;
+    }
+
+    .cake,
+    .cake img {
+        width: 300px;
+    }
+
+    .shedule-text-pos p {
+        position: relative; right: 10px;
+        font-size: 30px; font-weight: 600;
+    }
+
+    .shedule-text-pos .shedule-time {
+        position: relative; left: 20px;
+        font-size: 30px; font-weight: 600;
+    }
+
+    .pointer {
+        display: inline-block;
+    }
+
+    .shedule-card-mid .shedule-img {
+        position: relative; bottom: 1.3rem;
+    }
+    /* shedule block end */
+}
+
+
+@media (max-width: 760px) {
+    /* invation block */
+    .invation-text {
+        font-size: 25px;
+    }
+    /* invation block end */
+
+    .main-text {
+        font-size: 40px;
+    }
+
+    /* wedding-date block */
+    .wedding-date .flex-container {
+        display: inline-block; width: 100%;
+        text-align: center;
+    }
+
+    .main-table {
+        display: inline-block;
+        margin-right: 11rem;
+    }
+
+    .date-calendar-image-2 {
+        display: inline-block;
+        position: relative;
+        margin-left: 0;
+    }
+
+    .date-calendar-image {
+        display: none;
+    }
+
+    .heart-pos {
+        position: relative;
+        bottom: 7.7rem; left: 5rem;
+    }
+
+    .calendar-items {
+        position: relative; bottom: 3rem;
+        margin-top: 0;
+    }
+
+    .calendar-image-regular {
+        height: 400px; width: 350px;
+        border: 1px 0 solid;
+        border-radius: 16px;
+        overflow: hidden;
+    }
+
+    .date-position {
+        top: -10rem;
+    }
+    /* wedding-date block end */
+
+    /* shedule block */
+    .shedule-card-mid .shedule-img {
+        position: relative; bottom: 1.4rem;
+    }
+
+    /* shedule block end */
+}
+
+
+@media (max-width: 610px) {
+    /* invation block */
+    .invation-text {
+        font-size: 20px;
+    }
+
+    /* invation block end */
+
+    .main-text {
+        font-size: 35px;
+    }
+
+    /* place-of-reg block */
+    .info {
+        margin-top: 2.5rem;
+    }
+
+    /* place-of-reg block end */
+
+    /* shedule block */
+    .shedule-img {
+        width: 300px; height: 300px;
+    }
+
+    .shedule-img img {
+        width: 400px; height: 300px;
+    }
+
+    .shedule-img .bus {
+        width: 350px;
+    }
+
+    .banquet,
+    .banquet img {
+        width: 250px;
+    }
+
+    .cake,
+    .cake img {
+        width: 250px;
+    }
+
+    .shedule-text-pos p {
+        position: relative; right: 10px;
+        font-size: 25px; font-weight: 600;
+    }
+
+    .shedule-text-pos .shedule-time {
+        position: relative; left: 20px;
+        font-size: 25px; font-weight: 600;
+    }
+
+    .pointer span {
+        font-size: 80px;
+    }
+    /* shedule block end */
+
+    /* footer block */
+    .timer__item {
+        font-size: 50px;
+    }
+    /* footer block end */
+}
+
+
+@media (max-width: 576px) {
+    /* confirm block */
+    .modal-content {
+        border-radius: 0; border: 0;
+        width: 100vw; margin-bottom: 0rem;
+        margin-left: -1rem; margin-top: 0rem;
+    }
+
+    .img-modal {
+        width: 100vw; height: 130vw;
+    }
+
+    .btn-close.on {
+        display: none;
+    }
+
+    .btn-close.off {
+        display: inline-block;
+    }
+
+    .modal-navbar {
+        display: flex; width: 100%; height: 60px;
+        justify-content: end;
+        position: fixed; z-index: 1070;
+        background-color: rgba(248, 248, 255, 0.85);
+    }
+
+    .main-quest {
+        display: flex; align-items: center;
+        font-size: 20px;
+        left: -1rem;
+    }
+
+    .chs-drinks .main-quest {
+        right: 0;
+    }
+
+    .get-to .main-quest {
+        right: 0;
+    }
+
+    .regs .main-quest {
+        right: 0;
+    }
+
+    .form__input {
+        margin-left: 0.5rem;
+        width: 85vw;
+    }
+
+    .form__input.text-toggle-1,
+    .form__input.text-toggle-2 {
+        margin-left: 0.5rem;
+        width: 88vw;
+    }
+
+    .check-valid.on {
+        display: block; width: 85vw; height: 13.5rem;
+        top: 0; right: 0; left: 0;
+        margin-left: 1rem; margin-top: 12rem;
+    }
+
+    .btn-to-confirm-4__tgl {
+        display: block; width: 85vw;
+        padding-top: 1rem; padding-bottom: 1rem;
+        padding-left: 1rem; padding-right: 1rem;
+    }
+
+    .required-block.on,
+    .required-block-3.on,
+    .required-block-2.on {
+        width: 85vw; display: block;
+        padding-top: 1rem; padding-bottom: 4rem;
+        padding-left: 1rem; padding-right: 1rem;
+    }
+
+    .modal-header {
+        position: relative; right: 11rem;
+        display: block; width: 100%;
+    }
+
+    .required-block-3.on,
+    .required-block-2.on,
+    .btn-to-confirm-4__tgl.btn-to-confirm-5,
+    .btn-to-confirm-4__tgl.btn-to-confirm-6 {
+        margin-left: 1rem;
+    }
+
+    .text-toggle-1,
+    .text-toggle-2 {
+        margin-left: 1rem;
+    }
+    /* confirm block end */
+}
+
+
+@media (max-width: 540px) {
+    /* invation block */
+    .invation-text {
+        font-size: 18px;
+    }
+
+    /* invation block end */
+
+    .main-text {
+        font-size: 30px;
+    }
+
+    /* place-of-reg block */
+    .info {
+        margin-top: 1.5rem;
+    }
+
+    .marriage-img {
+        width: 450px;
+        height: 250px;
+    }
+    /* place-of-reg block end */
+
+    /* shedule block */
+    .shedule-img {
+        width: 250px; height: 250px;
+    }
+
+    .shedule-img img {
+        width: 350px; height: 250px;
+    }
+
+    .shedule-img .bus {
+        width: 300px;
+    }
+
+    .banquet,
+    .banquet img {
+        width: 200px;
+    }
+
+    .cake,
+    .cake img {
+        width: 200px;
+    }
+
+    .shedule-card-mid .shedule-img {
+        position: relative; bottom: 0.7rem;
+    }
+
+    .shedule-text-pos p {
+        position: relative; right: 10px;
+        font-size: 18px; font-weight: 600;
+    }
+
+    .shedule-text-pos .shedule-time {
+        position: relative; left: 18px;
+        font-size: 20px; font-weight: 600;
+    }
+
+    .pointer span {
+        font-size: 60px;
+    }
+
+    .shedule-block-1 {
+        margin-left: -8rem;
+    }
+
+    .of-x {
+        margin-top: 2rem;
+    }
+    /* shedule block end */
+
+    /* confirm block */
+    .confirm-text {
+        position: relative; top: 15rem;
+        color: #1d1c1c; font-size: 20px;
+    }
+    /* confirm block end */
+
+    /* footer block */
+    .timer__item {
+        font-size: 40px;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    /* footer block end */
+}
+
+
+@media only screen and (max-width: 455px) {
+    .body.active {
+        padding-right: 0px;
+    }
+
+    /* main block */
+    .main-image img {
+        width: 350px; height: 450px;
+    }
+
+    .name-text {
+        top: -7.4rem;
+        font-size: 34px;
+    }
+
+    .second-text {
+        top: 25rem;
+        font-size: 26px;
+    }
+
+    /* main block end */
+
+    /* invation block */
+    .invation-text {
+        font-size: 15px;
+    }
+
+    .invation {
+        margin-top: 3rem;
+    }
+
+    /* invation block end */
+
+    .main-text {
+        font-size: 25px;
+    }
+
+    /* place-of-reg block */
+    .info {
+        margin-top: 1.5rem;
+    }
+
+    .marriage-img {
+        width: 400px;
+        height: 200px;
+    }
+    /* place-of-reg block end */
+
+    /* confirm block */
+    .confirm-text {
+        position: relative; top: 15rem;
+        font-size: 18px;
+    }
+    /* confirm block end */
+}
+
+
+@media (max-width: 400px) {
+        /* place-of-reg block */
+        .info {
+            margin-top: 1rem;
+        }
+
+        .marriage-img {
+            width: 350px;
+            height: 200px;
+        }
+        /* place-of-reg block end */
+
+        /* confirm block */
+        .modal-body {
+            margin-bottom: 5rem;
+        }
+        /* confirm block end */
+}
+
+
+@media (max-width: 375px) {
+    /* navbar */
+    .canvas-header {
+        left: -1rem;
+    }
+
+    .nav-link {
+        margin-left: 64px;
+    }
+
+    .offcanvas-menu {
+        width: 300px;
+    }
+    /* navbar end */
+
+    /* main block */
+    .main-image img {
+        width: 300px;
+        height: 400px;
+    }
+
+    .name-text {
+        top: -7rem;
+        font-size: 30px;
+    }
+
+    .second-text {
+        top: 22rem;
+        font-size: 24px;
+    }
+
+    /* main block end */
+
+    /* invation block */
+    .invation-text {
+        font-size: 16px;
+    }
+
+    .main-text {
+        font-size: 20px;
+    }
+
+    .invation {
+        margin-top: 3rem;
+    }
+
+    /* invation block end*/
+
+    /* wedding-date block */
+    .main-table tr td {
+        font-size: 15px;
+    }
+
+    .date-position h2 {
+        font-size: 25px;
+    }
+
+    .date-calendar-image-2 {
+        display: inline-block;
+        position: relative;
+        margin-left: 0;
+    }
+
+    .date-calendar-image {
+        display: none;
+    }
+
+    .heart-pos {
+        width: 40px;
+        position: relative;
+        bottom: 5.9rem; left: 4.4rem;
+    }
+
+    .calendar-image {
+        height: 450px; width: 300px;
+    }
+
+    .calendar-image-regular {
+        height: 350px; width: 300px;
+        border: 1px 0 solid; border-radius: 16px;
+        overflow: hidden;
+    }
+
+    .date-position {
+        top: -10rem;
+    }
+
+    /* wedding-date block end */
+
+    /* place-of-reg block */
+    .info {
+        margin-top: 1.5rem;
+    }
+
+    .marriage-img {
+        width: 300px; height: 200px;
+    }
+
+    .plg1 p {
+        font-size: 15px;
+    }
+
+    .btn-to-open {
+        font-size: 15px;
+    }
+
+    .btn-to-open:hover {
+        font-size: 15px;
+    }
+    /* place-of-reg block end */
+
+    /* main-place block */
+    .plg2 p {
+        font-size: 15px;
+    }
+
+    .location-image-size {
+        width: 300px; height: 400px;
+    }
+    /* main-place block end */
+
+    /* shedule block */
+    .shedule-img {
+        width: 250px; height: 250px;
+    }
+
+    .shedule-img img {
+        width: 350px; height: 250px;
+    }
+
+    .shedule-img .bus {
+        width: 300px;
+    }
+
+    .banquet,
+    .banquet img {
+        width: 200px;
+    }
+
+    .cake,
+    .cake img {
+        width: 200px;
+    }
+
+    .shedule-card-mid .shedule-img {
+        position: relative; bottom: 0.7rem;
+    }
+
+    .shedule-text-pos p {
+        position: relative; right: 20px;
+        font-size: 15px; font-weight: 600;
+    }
+
+    .shedule-text-pos .shedule-time {
+        position: relative; left: 30px;
+        font-size: 15px; font-weight: 600;
+    }
+
+    .pointer span {
+        font-size: 40px;
+    }
+
+    .banquet-text p {
+        font-size: 15px;
+        margin-bottom: 1.2rem;
+    }
+
+    .banquet-text .shedule-time {
+        font-size: 15px;
+    }
+
+    .shedule-block-1 {
+        margin-left: -3rem;
+    }
+
+    .of-x {
+        margin-top: 1rem; padding-bottom: 1rem;
+    }
+
+    .shedule {
+        margin-top: 8rem;
+    }
+    /* shedule block end */
+
+    /* confirm block */
+    .confirm-text {
+        position: relative; top: 6rem;
+        font-size: 15px;
+    }
+
+    .tgl-text {
+        font-size: 15px;
+    }
+
+    .btn-to-confirm-1__tgl {
+        padding-top: 1rem; padding-bottom: 1rem;
+        padding-left: 9.7rem; padding-right: 5.2rem;
+    }
+
+    .btn-to-confirm-3__tgl {
+        padding-right: 5.6rem; padding-left: 5.6rem;
+        padding-top: 1rem; padding-bottom: 1rem;
+    }
+
+    .btn-to-confirm-2 {
+        padding-right: 6.2rem; padding-left: 6.2rem;
+        padding-top: 1rem; padding-bottom: 1rem;
+    }
+
+    .bg-image h1 {
+        top: 5rem;
+    }
+
+    .bg-image,
+    .clr {
+        height: 90%;
+    }
+
+    .btn-of-confirm {
+        margin-top: 12rem;
+    }
+
+    .main-quest {
+        font-size: 18px;
+    }
+     confirm block end
+
+    /* footer block */
+    .timer__item {
+        font-size: 30px;
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+    }
+
+    .footer-text {
+        font-size: 18px;
+        margin-top: 3rem; margin-bottom: 2rem;
+    }
+
+    footer {
+        width: 100%;
+        height: 100%;
+        margin-top: 1rem;
+    }
+    /* footer block end */
+}
+
+@media (max-width: 330px) {
+    /* invation block */
+    .invation-text {
+        font-size: 14px;
+    }
+
+    /* invation block end*/
+
+    /* confirm block */
+    .main-quest {
+        font-size: 16px;
+    }
+
+    .check-valid.on {
+        height: 14rem;
+        margin-left: 1rem; margin-top: 11rem;
+    }
+
+    .modal-body {
+        margin-bottom: 10rem;
+    }
+    /* confirm block end */
+}
+
+@media (max-width: 300px) {
+    /* main block */
+    .main-image img {
+        width: 250px;
+        height: 320px;
+    }
+
+    .name-text {
+        top: -6.5rem;
+        font-size: 25px;
+    }
+
+    .second-text {
+        top: 16rem;
+        font-size: 20px;
+    }
+
+    /* end main block */
+
+    /* invation block */
+    .invation-text {
+        font-size: 12px;
+    }
+
+    .main-text {
+        font-size: 18px;
+    }
+
+    /* invation block end*/
+
+    /* wedding-date block */
+    .main-table tr td {
+        font-size: 12px;
+    }
+
+    .heart-pos {
+        width: 40px;
+        position: relative;
+        bottom: 4.9rem;
+        left: 3.93rem;
+    }
+
+    .calendar-image {
+        height: 400px;
+        width: 250px;
+    }
+
+    .calendar-image-regular {
+        height: 300px;
+        width: 250px;
+        border: 1px 0 solid;
+        border-radius: 16px;
+        overflow: hidden;
+    }
+
+    .date-position h2 {
+        font-size: 20px;
+    }
+
+    /* wedding-date block end */
+
+    /* place-of-reg block */
+    .info {
+        margin-top: 1rem;
+    }
+
+    .marriage-img {
+        width: 250px;
+        height: 150px;
+    }
+
+    .plg1 p {
+        font-size: 15px;
+    }
+
+    .plg1 .flex-center {
+        margin-top: 2rem;
+    }
+
+    .btn-to-open {
+        font-size: 11px;
+    }
+
+    .btn-to-open:hover {
+        font-size: 11px;
+    }
+
+    .place-of-reg {
+        margin-top: -8rem;
+    }
+    /* place-of-reg block end */
+
+    /* main-place block */
+    .location-image-size {
+        width: 250px; height: 350px;
+    }
+
+    .main-place {
+        margin-top: 8rem;
+    }
+    /* main-place block end */
+
+    /* confirm block */
+    .confirm-text {
+        position: relative; top: 6rem;
+        font-size: 13px;
+    }
+
+    .tgl-text {
+        font-size: 11px;
+    }
+
+    .btn-to-confirm-1__tgl {
+        padding-top: 0.8rem; padding-bottom: 0.8rem;
+        padding-left: 9.1rem; padding-right: 4.6rem;
+    }
+
+    .btn-to-confirm-3__tgl {
+        padding-right: 5.55rem; padding-left: 5.55rem;
+        padding-top: 0.8rem; padding-bottom: 0.8rem;
+    }
+
+    .btn-to-confirm-2 {
+        padding-right: 6rem; padding-left: 6rem;
+        padding-top: 0.8rem; padding-bottom: 0.8rem;
+    }
+
+    .bg-image h1 {
+        top: 5rem;
+    }
+
+    .bg-image,
+    .clr {
+        height: 90%;
+    }
+
+    .btn-of-confirm {
+        margin-top: 12rem;
+    }
+
+    .main-quest {
+        font-size: 14px;
+    }
+
+    .check-valid.on {
+        height: 13.5rem;
+        margin-left: 1rem; margin-top: 11rem;
+    }
+    /* confirm block end */
+}
+
+
+@media only screen and (max-height: 750px) {
+    .body.active {
+        padding-right: 0px;
+    }
+}
+
+
+@media (max-height: 710px) and (max-width: 900px) {
+    .main-image img {
+        width: 320px; height: 400px;
+    }
+
+    .name-text {
+        top: -7rem;
+        font-size: 30px;
+    }
+
+    .second-text {
+        top: 21rem;
+        font-size: 25px;
+    }
+}
+
+
+@media (max-height: 600px) {
+    .of-y {
+        overflow-y: scroll;
+    }
+}
+
+
+@media (max-height: 600px) and (max-width: 900px) {
+
+    .main-image img {
+        width: 280px; height: 350px;
+    }
+
+    .name-text {
+        top: -6.5rem; font-size: 26px;
+    }
+
+    .second-text {
+        top: 18rem;
+        font-size: 25px;
+    }
+}
+
+
+@media (max-height: 550px) and (max-width: 900px) {
+    .main-image img {
+        width: 240px; height: 300px;
+    }
+
+    .name-text {
+        top: -6.5rem;
+        font-size: 24px;
+    }
+
+    .second-text {
+        top: 15rem;
+        font-size: 20px;
+    }
+}
+
+
+@media (max-height: 490px) and (max-width: 900px) {
+    .main-image img {
+        width: 200px; height: 250px;
+    }
+
+    .name-text {
+        top: -6rem;
+        font-size: 20px;
+    }
+}
+
+
+@media (max-height: 490px) and (min-width: 440px) and (max-width: 900px) {
+    .border-text-name {
+        display: inline-block;
+        width: 250px; height: 300px;
+        bottom: 8rem; right: 0;
+    }
+
+    .ad-els {
+        display: none;
+    }
+
+    .main-image img {
+        width: 250px; height: 300px;
+    }
+
+    .main-image {
+        bottom: 8rem;
+        width: 250px; height: 300px;
+    }
+
+    .name-text {
+        font-size: 25px;
+    }
+
+    .pos-text-3 {
+        display: inline-block;
+        font-size: 20px; font-family: "Roboto"; font-weight: 600;
+        margin-left: 3rem;
+    }
+
+    .pos-text-2 {
+        display: none;
+    }
+}
+
+@media (max-height: 710px) and (min-height: 551px) and (max-width: 320px) {
+        /* main block */
+        .main-image img {
+            width: 250px; height: 320px;
+        }
+
+        .name-text {
+            top: -6.5rem;
+            font-size: 25px;
+        }
+
+        .second-text {
+            top: 16rem;
+            font-size: 20px;
+        }
+        /* end main block */
+}
+
+@media (min-height: 1200px) {
+    .img-header {
+        height: 80vh;
+    }
+}

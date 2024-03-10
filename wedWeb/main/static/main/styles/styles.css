@@ -1,0 +1,685 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script&display=swap');
+
+/* Base settings */
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+*,
+*:after,
+*:before {
+    box-sizing: inherit;
+}
+
+body {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+body,
+.main-section {
+    background-color: ghostwhite;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+    color: black;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+footer {
+    margin-top: 6rem;
+}
+
+header {
+    background-color: rgba(240, 248, 255, 0.6);
+    width: 100%;
+    height: 100%;
+}
+
+/* end Base settings */
+
+.footer-text {
+    font-weight: 600;
+    font-size: 22px;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+}
+
+.ad-els {
+    display: none;
+}
+
+.calendar-image {
+    height: 500px;
+    width: 350px;
+}
+
+.calendar-image-regular {
+    height: 500px;
+    width: 350px;
+    border: 1px 0 solid;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.date-calendar-image-2 {
+    display: none;
+}
+
+.date-text {
+    margin-top: 4rem;
+}
+
+.calendar-text {
+    margin-bottom: 1rem;
+}
+
+.date-position h2 {
+    font-size: 30px;
+}
+
+.calendar-item {
+    margin-top: 8rem;
+}
+
+.date-calendar-image {
+    margin-left: 2rem;
+}
+
+.main-text {
+    font-size: 50px;
+}
+
+.main-font {
+    font-family: 'Pacifico', 'normal';
+}
+
+.name-text {
+    font-size: 50px;
+}
+
+.img-header {
+    background-image: url(../images/bg-image/blue-flowers.jpg);
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    top: -1.5rem;
+}
+
+.pos-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 12rem;
+}
+
+.main-image {
+    width: 450px;
+    height: 550px;
+    overflow: hidden;
+    position: relative;
+    bottom: 1.55rem;
+    /* border: 1px 0 solid;
+    border-radius: 300px 300px 0px 0px; */
+}
+
+.location-image-regular.no-wide {
+    display: none;
+}
+
+.shedule-img {
+    width: 250px;
+    height: 300px;
+    overflow: hidden;
+    border: 1px 0 solid;
+    border-radius: 16px;
+}
+
+.plg1 {
+    margin-left: 4.5rem;
+}
+
+.plg2 {
+    margin-right: 4.5rem;
+}
+
+.main-image img {
+    border: 1px 0 solid;
+    border-radius: 32px;
+    width: 450px;
+    height: 550px;
+}
+
+.border-text-name {
+    width: 450px;
+    height: 550px;
+    overflow: hidden;
+    position: relative;
+    bottom: 1.55rem;
+    border: 1px rgb(160, 160, 160) solid;
+    border-radius: 32px;
+}
+
+.marriage-img {
+    width: 500px;
+    height: 300px;
+    overflow: hidden;
+    border: 1px 0 solid;
+    border-radius: 16px;
+}
+
+.location-image-size {
+    width: 350px;
+    height: 450px;
+    overflow: hidden;
+    border: 1px 0 solid;
+    border-radius: 16px;
+}
+
+.location-image-regular {
+    width: 350px;
+    height: 450px;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.invation {
+    margin-top: 6rem;
+}
+
+.pos-text-1 {
+    position: relative;
+    top: -3rem;
+}
+
+.second-text {
+    font-family: 'Roboto', 'normal';
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.pos-text-2 {
+    margin-top: 8.5rem;
+}
+
+.pos-text-3 {
+    display: none;
+}
+
+.text-name-container {
+    position: relative;
+    top: 10rem;
+}
+
+.modal-content {
+    border-radius: 0;
+    border: 0;
+    width: 550px;
+    overflow-x: hidden;
+    margin-top: 1rem;
+    margin-bottom: 0rem;
+    -webkit-overflow-scrolling: touch;
+}
+
+.img-modal {
+    width: 550px;
+    height: 700px;
+}
+
+.modal-h2 {
+    position: relative;
+    top: 1rem;
+    left: 11rem;
+    font-weight: bold;
+    font-family: 'Roboto', 'normal';
+    font-size: 30px;
+}
+
+.nav {
+    animation-duration: 2s;
+    animation-name: fadeInUp;
+}
+
+.main-quest {
+    position: relative;
+    right: 9rem;
+    font-size: 25px;
+}
+
+#main-page {
+    background: 0 0;
+    color: ghostwhite;
+    transition: all 0.5s ease;
+    font-family: 'Roboto', 'normal';
+}
+
+#main-page:hover {
+    color: rgb(245, 167, 138);
+    transition: all 0.5s ease;
+}
+
+.info {
+    font-family: 'Roboto', 'normal';
+    font-size: 20px;
+    margin-top: 4.5rem;
+}
+
+.nav li>a {
+    color: ghostwhite;
+    transition: all 0.5s ease;
+    font-family: 'Roboto', 'normal';
+}
+
+.nav li>a:hover {
+    color: rgb(245, 167, 138);
+    transition: all 0.5s ease;
+}
+
+p,
+a {
+    font-family: 'Roboto', 'normal';
+}
+
+.timer__items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.invation-text {
+    font-family: 'Roboto', 'normal';
+    font-weight: 600;
+    font-size: 30px;
+    margin-top: 4rem;
+}
+
+#btn-close-s {
+    float: right;
+    width: 50px;
+    color: ghostwhite;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+}
+
+.timeline ul {
+    font-family: 'Roboto', 'normal';
+    font-size: 20px;
+}
+
+.shedule-position {
+    position: relative;
+    top: 1;
+    left: 20rem;
+}
+
+.full-container .btn-container {
+    margin-top: 2.5rem;
+}
+
+.clr {
+    margin-top: 12rem;
+    align-items: center;
+    background-image: url(../images/bg-image/blue-flowers.jpg);
+    height: 1000px;
+    width: 100%;
+    position: relative;
+    top: -1.5rem;
+    /* left: 29rem; */
+}
+
+.bg-image {
+    position: relative;
+    width: 100%;
+    height: 1000px;
+    background-color: rgba(240, 248, 255, 0.6);
+}
+
+.shedule-card-left {
+    margin-right: 1rem;
+}
+
+.shedule-card-right {
+    margin-left: 1rem;
+}
+
+.shedule-card-mid .shedule-img {
+    position: relative;
+    bottom: 1rem;
+}
+
+.shedule-block-2 {
+    margin-top: 2rem;
+}
+
+.shedule-text-pos {
+    justify-content: space-between;
+}
+
+.shedule-text-pos p {
+    position: relative;
+    right: 10px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.shedule-text-pos .shedule-time {
+    position: relative;
+    left: 20px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.of-x {
+    overflow-x: hidden;
+    margin-top: 4rem;
+}
+
+.shedule {
+    margin-top: 12rem;
+}
+
+.main-place {
+    margin-top: 12rem;
+}
+
+.main-section {
+    position: relative;
+    top: -3rem;
+    border-top-left-radius: 32px;
+    border-top-right-radius: 32px;
+    border: 1px transparent solid;
+}
+
+.btn-to-confirm-1__tgl {
+    border: 1px #1d1c1c solid;
+    background-color: transparent;
+    border-radius: 30px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 10.5rem;
+    padding-right: 6rem;
+}
+
+.btn-to-confirm-4__tgl {
+    background-color: transparent;
+    border: 1px #1d1c1c solid;
+    border-radius: 30px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    width: 30.5rem;
+}
+
+.btn-to-confirm-3__tgl {
+    border: 1px #1d1c1c solid;
+    background-color: transparent;
+    border-radius: 30px;
+    padding-right: 5.7rem;
+    padding-left: 5.7rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.btn-to-confirm-2 {
+    border: 1px #1d1c1c solid;
+    background-color: transparent;
+    border-radius: 30px;
+    padding-right: 6.5rem;
+    padding-left: 6.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.bg-image h1 {
+    position: relative;
+    top: 11rem;
+}
+
+.flex-btns-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.btn-container {
+    display: table;
+    box-sizing: border-box;
+}
+
+.flex-center.btn-2 {
+    margin-top: 1rem;
+}
+
+.first-btn {
+    margin-bottom: -14px;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+}
+
+.btn-to-open {
+    border: 1px #1d1c1c solid;
+    border-radius: 30px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 6rem;
+    padding-right: 6rem;
+}
+
+.btn-to-open:hover {
+    border: 1px #1d1c1c solid;
+    border-radius: 30px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 6rem;
+    padding-right: 6rem;
+}
+
+.btn-to-confirm-1__tgl .tgl-text {
+    position: relative;
+    top: 1;
+    right: 2rem;
+}
+
+.tgl-text {
+    font-size: 20px;
+    font-weight: 400;
+    color: #1d1c1c;
+}
+
+.confirm-text {
+    position: relative;
+    top: 15rem;
+    color: #1d1c1c;
+    font-size: 22px;
+    font-weight: 600;
+    font-family: Roboto;
+}
+
+.btn-of-confirm {
+    margin-top: 18rem;
+}
+
+.place-of-reg {
+    margin-top: 8rem;
+}
+
+.wedding-date {
+    margin-top: 10rem;
+}
+
+.date-position {
+    margin-top: 12rem;
+    position: relative;
+    top: -6rem;
+}
+
+.date-container {
+    font-size: 30px;
+}
+
+.nav-position .nav-item .nav-link {
+    color: #1d1c1c;
+    background: 0 0;
+}
+
+.nav-position #main-page {
+    color: #1d1c1c;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        top: -50px;
+    }
+
+    to {
+        opacity: 1;
+        top: 0;
+    }
+}
+
+.heart-anm {
+    animation: heartAnim 2s ease 0s infinite normal forwards;
+    width: 50px;
+    opacity: 1;
+    position: relative;
+    right: 8px;
+    bottom: 4px;
+}
+
+.heart-pos {
+    position: relative;
+    bottom: 7.4rem;
+    left: 4.6rem;
+}
+
+.key-date {
+    position: relative;
+    left: 7px;
+    top: 5px;
+}
+
+.calendar-container {
+    display: flex;
+    justify-content: center;
+}
+
+.calendar-day {
+    font-size: 50px;
+    margin: 0 4rem;
+    padding: 2rem 3.4rem;
+    border: 1px #1d1c1c solid;
+    border-radius: 8px;
+}
+
+.calendar-month {
+    font-size: 50px;
+    margin: 0 2rem;
+    padding: 2rem 3.4rem;
+    border: 1px #1d1c1c solid;
+    border-radius: 8px;
+}
+
+.calendar-year {
+    font-size: 50px;
+    margin: 0 4rem;
+    padding: 2rem 1.5rem;
+    border: 1px #1d1c1c solid;
+    border-radius: 8px;
+}
+
+.pr-sttgs {
+    position: relative;
+    left: 1rem;
+    top: 7rem;
+    font-size: 100px;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.pointer {
+    display: none;
+    animation: pointerAnim 6s ease 0s infinite normal forwards;
+}
+
+@keyframes pointerAnim {
+
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+
+    10%,
+    30%,
+    50%,
+    70% {
+        transform: translateX(-10px);
+    }
+
+    20%,
+    40%,
+    60% {
+        transform: translateX(10px);
+    }
+
+    80% {
+        transform: translateX(8px);
+    }
+
+    90% {
+        transform: translateX(-8px);
+    }
+}
+
+@keyframes heartAnim {
+    0% {
+        animation-timing-function: ease-out;
+        transform: scale(1);
+        transform-origin: center center;
+    }
+
+    10% {
+        animation-timing-function: ease-in;
+        transform: scale(0.91);
+    }
+
+    17% {
+        animation-timing-function: ease-out;
+        transform: scale(0.98);
+    }
+
+    33% {
+        animation-timing-function: ease-in;
+        transform: scale(0.87);
+    }
+
+}

@@ -1,0 +1,566 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+    <title>Приглашение на свадьбу</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" type="text/css">
+    <link rel="stylesheet" href="{% static 'main/styles/js-style.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'main/styles/styles.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'main/styles/styles-calendar.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'main/styles/navbar.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'main/styles/modal-window.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'main/styles/media.css' %}" type="text/css">
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static 'main/images/favicon-32x32.png' %}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{% static 'main/images/favicon-16x16.png' %}">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="{% static 'main/font-awesome/css/all.css' %}">
+    <script src="https://kit.fontawesome.com/ef04af8ff1.js" crossorigin="anonymous" defer></script>
+</head>
+
+<body class="body" id="body-filter">
+    <div class="img-header">
+        <header class='mt-4' id='main-part'>
+            <nav class="main-menu">
+                <div class="btn-burger-pos">
+                    <div class="btn-burger">
+                        <a class="open-btn" id="open-model-btn"><span class="sttgs-btn"></span></a>
+                    </div>
+                </div>
+                <div class="offcanvas-menu" id="my-modal">
+                    <div class="of-y">
+                        <nav class="navbar">
+                            <nav id="navbar-example3" class="navbar flex-column align-items-stretch p-3">
+                                <div class="canvas-header">
+                                    <button id="close-my-model-btn" type="button" class="btn-close btn-close-pos" aria-label="Close"></button>
+                                </div>
+                                <nav class="nav nav-pills flex-column">
+                                    <a class="nav-link link-one" href="#main-part">Главная</a>
+                                    <a class="nav-link link-two" href="#invation-part">Приглашение</a>
+                                    <a class="nav-link link-three" href="#wedding-date-part">Дата проведения</a>
+                                    <a class="nav-link link-four" href="#place-of-registration-part">Место регистрации</a>
+                                    <a class="nav-link link-five" href="#location-part">Место проведения</a>
+                                    <a class="nav-link link-svn" href="#daily-shedule-part">Расписание дня</a>
+                                    <a class="nav-link link-et" href="#confirm-presence-part">Подтвердить присутствие</a>
+                                </nav>
+                            </nav>
+                        </nav>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="pos-img">
+                <p class="ad-els text-center main-font name-text">Филипп & Маргарита</p>
+                <p style="font-weight: 600;" class="ad-els second-text text-center">10 августа 2024</p>
+                <div class="text-center main-image">
+                    <img src="{% static 'main/images/Wed-photo-mar-phil.jpg' %}">
+                </div>
+                <div class="border-text-name">
+                    <div class="text-name-container">
+                        <div class="th">
+                            <h2 class="pos-text-1 text-center main-font name-text">Филипп<br>&<br>Маргарита</h2>
+                            <h2 class="pos-text-3 text-center">10 августа 2024</h2>
+                        </div>
+                        <h2 style="font-weight: 600;" class="second-text pos-text-2 text-center">10 августа 2024</h2>
+                    </div>
+                </div>
+            </div>
+
+            <script src="https://kit.fontawesome.com/ef04af8ff1.js" crossorigin="anonymous"></script>
+            <script src="{% static 'main/js/navbar.js' %}" defer>
+            </script>
+        </header>
+    </div>
+
+    <section style="width: 100%;">
+        <div class="main-section">
+            <div style="scroll-behavior: smooth;" data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example"
+                tabindex="0">
+                <div class="invation" id="invation-part">
+                    <h1 class="text-center main-text main-font">Дорогие друзья, родные и близкие!</h1>
+                    <p class="invation-text text-center">Мы счастливы пригласить вас на нашу<br>
+                    свадьбу. Для нас очень важно, чтобы вы<br>смогли разделить с нами самое счастливое<br>
+                    мгновение в нашей жизни. Порадуйте нас<br>своим присутствием.</p>
+                </div>
+                <div class="wedding-date" id="wedding-date-part">
+                        <div class="flex-container">
+                            <div class="date-calendar-image-2">
+                                <div class="calendar-image-regular">
+                                    <img class="calendar-image" src="{% static 'main/images/calendar-img/one.jpg' %}" alt="Calendar image">
+                                </div>
+                            </div>
+                            <div class="date-calendar">
+                                <div class="calendar-items">
+                                    <h1 class="date-text text-center main-text main-font">Дата проведения</h1>
+                                    <div class="date-position text-center">
+                                        <h2 class="text-center second-text calendar-text">Август</h2>
+                                        <div class="table-pos">
+                                            <table class="main-table">
+                                                <tr class="days">
+                                                    <td style="position: relative; left: 1rem;">пн</td>
+                                                    <td style="position: relative; left: 2rem;">вт</td>
+                                                    <td style="position: relative; left: 3rem;">ср</td>
+                                                    <td style="position: relative; left: 4rem;">чт</td>
+                                                    <td style="position: relative; left: 5rem;">пт</td>
+                                                    <td style="position: relative; left: 6rem;">сб</td>
+                                                    <td style="position: relative; left: 7rem;">вс</td>
+                                                </tr>
+                                                <tr class="lastmonth">
+                                                    <td style="position: relative; left: 1rem;">-</td>
+                                                    <td style="position: relative; left: 2rem;">-</td>
+                                                    <td style="position: relative; left: 3rem;">-</td>
+                                                    <td style="position: relative; left: 4rem;">1</td>
+                                                    <td style="position: relative; left: 5rem;">2</td>
+                                                    <td style="position: relative; left: 6rem;">3</td>
+                                                    <td style="position: relative; left: 7rem;">4</td>
+                                                </tr>
+                                                <tr class="midmonth">
+                                                    <td style="position: relative; left: 1rem;">5</td>
+                                                    <td style="position: relative; left: 2rem;">6</td>
+                                                    <td style="position: relative; left: 3rem;">7</td>
+                                                    <td style="position: relative; left: 4rem;">8</td>
+                                                    <td style="position: relative; left: 5rem;">9</td>
+                                                    <td style="position: relative; left: 6rem;">10</td>
+                                                    <td style="position: relative; left: 7rem;">11</td>
+                                                </tr>
+                                                <tr class="midmonth">
+                                                    <td style="position: relative; left: 1rem;">12</td>
+                                                    <td style="position: relative; left: 2rem;">13</td>
+                                                    <td style="position: relative; left: 3rem;">14</td>
+                                                    <td style="position: relative; left: 4rem;">15</td>
+                                                    <td style="position: relative; left: 5rem;">16</td>
+                                                    <td style="position: relative; left: 6rem;">17</td>
+                                                    <td style="position: relative; left: 7rem;">18</td>
+                                                </tr>
+                                                <tr class="midmonth">
+                                                    <td style="position: relative; left: 1rem;">19</td>
+                                                    <td style="position: relative; left: 2rem;">20</td>
+                                                    <td style="position: relative; left: 3rem;">21</td>
+                                                    <td style="position: relative; left: 4rem;">22</td>
+                                                    <td style="position: relative; left: 5rem;">23</td>
+                                                    <td style="position: relative; left: 6rem;">24</td>
+                                                    <td style="position: relative; left: 7rem;">25</td>
+                                                </tr>
+                                                <tr class="endmonth">
+                                                    <td style="position: relative; left: 1rem;">26</td>
+                                                    <td style="position: relative; left: 2rem;">27</td>
+                                                    <td style="position: relative; left: 3rem;">28</td>
+                                                    <td style="position: relative; left: 4rem;">29</td>
+                                                    <td style="position: relative; left: 5rem;">30</td>
+                                                    <td style="position: relative; left: 6rem;">31</td>
+                                                    <td style="position: relative; left: 7rem;">-</td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                        <img class="heart-pos heart-anm" src="{% static 'main/images/heart.png' %}">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="date-calendar-image">
+                                <div class="calendar-image-regular">
+                                    <img class="calendar-image" src="{% static 'main/images/calendar-img/one.jpg' %}" alt="Calendar image">
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                <div class="place-of-reg" id="place-of-registration-part">
+                        <h1 class="text-center main-text main-font">Место регистрации</h1>
+                        <div class="flex-container text-center info">
+                            <div class="marriage-img-regular">
+                                <div>
+                                    <img class="marriage-img" src="{% static 'main/images/zags1.jpg' %}">
+                                </div>
+                            </div>
+                            <div class="plg1">
+                                <p style="font-weight: 600;">ЗАГС<br>Ростов-на-Дону, Университетский переулок, 48/2А</p>
+                                <p style="font-weight: 600; margin-top: 2.5rem;">Сбор гостей в 15:00</p>
+                                <div class="flex-center">
+                                    <div class="btn-container">
+                                        <a style="color: #1d1c1c; font-weight: 600;" class="btn-to-open" target="_blank" href="https://yandex.ru/maps/39/rostov-na-donu/?ll=39.730285%2C47.231107&mode=search&sll=39.720349%2C47.222078&sspn=0.493011%2C0.203723&text=%D0%93%D0%BE%D1%80%D0%BE%D0%B4%D1%81%D0%BA%D0%BE%D0%B9%20%D0%9A%D0%B8%D1%80%D0%BE%D0%B2%D1%81%D0%BA%D0%B8%D0%B9%20%D0%BE%D1%82%D0%B4%D0%B5%D0%BB%20%D0%97%D0%90%D0%93%D0%A1&whatshere%5Bpoint%5D=39.727964%2C47.226110&whatshere%5Bzoom%5D=16&z=15">
+                                            Открыть карту
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                <div class="main-place" id="location-part">
+                    <h1 class="text-center main-text main-font">Место проведения</h1>
+                    <div class="flex-container text-center info">
+                        <div class="location-image-regular no-wide">
+                            <img class="location-image-size" src="https://avatars.mds.yandex.net/get-altay/9686455/2a000001894c8c1b656b40b9739fc630a654/XXXL" alt="...">
+                        </div>
+                        <div class="plg2">
+                            <p style="font-weight: 600;">Ресторан Арарат<br>Ростов-на-Дону, Ростовская ул., 59Б, Чалтырь</p>
+                            <p style="font-weight: 600; margin-top: 2.5rem;">Сбор гостей в 17:30</p>
+                            <div style="margin-top: 4rem;" class="flex-center">
+                                <div class="btn-container">
+                                    <a style="color: #1d1c1c; font-weight: 600;" target="_blank" class="btn-to-open" href="https://yandex.ru/maps/11029/rostov-oblast/house/rostovskaya_ulitsa_59b/Z0AYcwZoQEUFQFptfX52dH9qbQ==/?ll=39.519360%2C47.275625&z=19">
+                                        Открыть карту
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="location-image-regular wide">
+                            <img class="location-image-size" src="https://avatars.mds.yandex.net/get-altay/9686455/2a000001894c8c1b656b40b9739fc630a654/XXXL" alt="...">
+                        </div>
+                    </div>
+                </div>
+                <div class="shedule" id="daily-shedule-part">
+                    <h1 class="text-center main-text main-font">Расписание дня</h1>
+                    <div class="of-x text-center">
+                        <div class="pointer">
+                            <span style="font-family: Cormorant Garamond;" class="pr-sttgs">Swipe→</span>
+                        </div>
+                        <div class="flex-container shedule-block-1">
+                            <div class="shedule-card-left">
+                                <div class="shedule-img">
+                                    <img width="400px" height="300px" src="{% static 'main/images/reg (4).jpg' %}">
+                                </div>
+                                <div class="flex-container shedule-text-pos">
+                                    <p class="shedule-time">15:00</p>
+                                    <p>Регистрация<br>в загсе</p>
+                                </div>
+                            </div>
+
+                            <div class="shedule-card-mid">
+                                <div class="shedule-img">
+                                    <img width="400px" height="300px" src="{% static 'main/images/photoseccion.jpg' %}">
+                                </div>
+                                <div class="flex-container shedule-text-pos">
+                                    <p class="shedule-time">15:30</p>
+                                    <p>Фотосессия</p>
+                                </div>
+                            </div>
+
+                            <div class="shedule-card-right">
+                                <div class="shedule-img">
+                                    <img class="bus" width="400px" height="300px" src="{% static 'main/images/bus.jpg' %}">
+                                </div>
+                                <div class="flex-container shedule-text-pos">
+                                    <p class="shedule-time">16:30</p>
+                                    <p>Сбор у автобуса<br>(Театральная пл.)</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex-container shedule-block-2">
+                            <div class="shedule-card-left">
+                                <div class="shedule-img banquet">
+                                    <img width="250px" height="350px"
+                                        src="https://avatars.mds.yandex.net/get-altay/777564/2a000001894c8bf7a25dc37cca54cf7d3573/XXXL">
+                                </div>
+                                <div class="flex-container shedule-text-pos banquet-text">
+                                    <p class="shedule-time">18:00</p>
+                                    <p>Праздничный<br>банкет</p>
+                                </div>
+                            </div>
+
+                            <div class="shedule-card-mid">
+                                <div class="shedule-img cake">
+                                    <img width="250px" height="300px" src="{% static 'main/images/cake (2).jpg' %}">
+                                </div>
+                                <div class="flex-container shedule-text-pos cake-text">
+                                    <p class="shedule-time">21:30</p>
+                                    <p>Торт</p>
+                                </div>
+                            </div>
+
+                            <div class="shedule-card-right">
+                                <div class="shedule-img">
+                                    <img width="250px" height="300px" src="{% static 'main/images/fires (2).jpg' %}">
+                                </div>
+                                <div class="flex-container shedule-text-pos">
+                                    <p class="shedule-time">00:00</p>
+                                    <p>Окончание<br>вечера</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center confirm" id="confirm-presence-part">
+                        <div class="clr">
+                            <div class="bg-image">
+                                <h1 class="main-text main-font">Подтвердить присутствие</h1>
+                                <p style="font-weight: 600;" class="confirm-text">Просим вас подтвердить свое присутствие не позднее<br>10 мая 2024 года</p>
+                                <div class="btn-of-confirm">
+                                    <div class="first-btn flex-center">
+                                        <div class="btn-container">
+                                            <button type="button" class="btn-to-confirm-1__tgl" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                                <span class="tgl-text">Я приду<span>
+                                            </button>
+                                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                <a id="btn-close-s" type="button" class="btn-close on" data-bs-dismiss="modal" aria-label="Close"></a>
+                                                <div class="modal-navbar">
+                                                    <button id="btn-close-s" type="button" class="btn-close off" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+                                                    <div class="modal-w modal-dialog">
+                                                        <div class="modal-content">
+                                                            <img class="img-modal" src="{% static 'main/images/Wed-photo-mar-phil.jpg' %}">
+                                                            <div class="modal-header">
+                                                                <h2 class="modal-h2">Анкета гостя</h2>
+                                                            </div>
+                                                            <div class="modal-body">
+                                                                <form style="margin-left: 1rem;" method="post">
+                                                                    {% csrf_token %}
+                                                                    <div class="reg-offce">
+                                                                        <p class="main-quest">Присутствие в загсе</p>
+                                                                        <label class="radio-btn-1 mcui-radio">
+                                                                            {{ dataArticles.form.quest_1 }}
+                                                                            <div></div>
+                                                                            <div style="font-family: Roboto; font-weight: 600;" class="quest-text">Буду присутствовать</div>
+                                                                        </label>
+                                                                        <label class="radio-btn-2 mcui-radio">
+                                                                            {{ dataArticles.form.quest_1 }}
+                                                                            <div></div>
+                                                                            <div style="font-family: Roboto; font-weight: 600;">Не буду</div>
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="chs-drinks">
+                                                                        <p class="main-quest">Какие напитки вы предпочитаете?</p>
+                                                                        <span class="hid-checkbox">
+                                                                            {{ dataArticles.form.quest_2 }}
+                                                                        </span>
+                                                                        <div class="check-valid"></div>
+                                                                        <label class="checkbox-1 mcui-checkbox">
+                                                                            <input type="checkbox" name="first" value="Вино белое" required="required" checked>
+                                                                            <div>
+                                                                                <svg class="mcui-check" viewBox="-2 -2 35 35" aria-hidden="true">
+                                                                                    <title>checkmark-circle</title>
+                                                                                    <polyline points="7.57 15.87 12.62 21.07 23.43 9.93" />
+                                                                                </svg>
+                                                                            </div>
+                                                                            <div style="font-family: Roboto; font-weight: 600;">Вино белое</div>
+                                                                        </label>
+                                                                        <label class="checkbox-2 mcui-checkbox">
+                                                                            <input type="checkbox" name="first" value="Вино красное">
+                                                                            <div>
+                                                                                <svg class="mcui-check" viewBox="-2 -2 35 35" aria-hidden="true">
+                                                                                    <title>checkmark-circle</title>
+                                                                                    <polyline points="7.57 15.87 12.62 21.07 23.43 9.93" />
+                                                                                </svg>
+                                                                            </div>
+                                                                            <div style="font-family: Roboto; font-weight: 600;">Вино красное</div>
+                                                                        </label>
+                                                                        <label class="checkbox-3 mcui-checkbox">
+                                                                            <input type="checkbox" name="first" value="Шампанское">
+                                                                            <div>
+                                                                                <svg class="mcui-check" viewBox="-2 -2 35 35" aria-hidden="true">
+                                                                                    <title>checkmark-circle</title>
+                                                                                    <polyline points="7.57 15.87 12.62 21.07 23.43 9.93" />
+                                                                                </svg>
+                                                                            </div>
+                                                                            <div style="font-family: Roboto; font-weight: 600;">Шампанское</div>
+                                                                        </label>
+                                                                        <label class="checkbox-4 mcui-checkbox">
+                                                                            <input type="checkbox" name="first" value="Крепкие напитки">
+                                                                            <div>
+                                                                                <svg class="mcui-check" viewBox="-2 -2 35 35" aria-hidden="true">
+                                                                                    <title>checkmark-circle</title>
+                                                                                    <polyline points="7.57 15.87 12.62 21.07 23.43 9.93" />
+                                                                                </svg>
+                                                                            </div>
+                                                                            <div style="font-family: Roboto; font-weight: 600;">Крепкие напитки</div>
+                                                                        </label>
+                                                                        <label class="checkbox-5 mcui-checkbox">
+                                                                            <input type="checkbox" name="first" value="Алкоголь пить не буду">
+                                                                            <div>
+                                                                                <svg class="mcui-check" viewBox="-2 -2 35 35" aria-hidden="true">
+                                                                                    <title>checkmark-circle</title>
+                                                                                    <polyline points="7.57 15.87 12.62 21.07 23.43 9.93" />
+                                                                                </svg>
+                                                                            </div>
+                                                                            <div style="font-family: Roboto; font-weight: 600;">Алкоголь пить не буду</div>
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="get-to">
+                                                                        <p class="main-quest">Как вы планируете добираться?</p>
+                                                                        <div>
+                                                                            <label class="radio-btn-3 mcui-radio">
+                                                                                {{ dataArticles.form.quest_3 }}
+                                                                                <div></div>
+                                                                                <div style="font-family: Roboto; font-weight: 600;">Организованный трансфер</div>
+                                                                            </label>
+                                                                            <label class="radio-btn-4 mcui-radio">
+                                                                                {{ dataArticles.form.quest_3 }}
+                                                                                <div></div>
+                                                                                <div style="font-family: Roboto; font-weight: 600;">Доберусь самостоятельно</div>
+                                                                            </label>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="regs">
+                                                                        <p class="main-quest">Ваши имена и фамилии</p>
+                                                                        <div class="form__group">
+                                                                            {{ dataArticles.form.names }}
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="required-block">
+                                                                        <span style="font-family: Roboto; font-weight: 500; color: ghostwhite;" class="required-text">Пожалуйста, заполните все обязательные поля</span>
+                                                                    </div>
+                                                                    <button style="margin-top: 2rem;" class="btn-to-confirm-4__tgl" type="submit">
+                                                                        <span style="font-size: 20px; font-weight: 400; color: #1d1c1c;" class="tgl-send">Отправить</span>
+                                                                    </button>
+                                                                    <script src={% static 'main/js/buttons.js' %} defer></script>
+                                                                </form>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div style="margin-top: 2rem;" class="flex-center">
+                                        <div class="btn-container">
+                                            <button type="button" style="color: #1d1c1c;" class="text-center btn-to-confirm-2" data-bs-toggle="modal" data-bs-target="#exampleModal-2">
+                                                <span class="tgl-text">Отвечу позже</span>
+                                            </button>
+                                            <div class="modal fade" id="exampleModal-2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                <a id="btn-close-s" type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></a>
+                                                <div class="modal-navbar">
+                                                    <a id="btn-close-s" type="button" class="btn-close off" data-bs-dismiss="modal" aria-label="Close"></a>
+                                                </div>
+                                                <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+                                                    <div class="modal-w modal-dialog">
+                                                        <div class="modal-content">
+                                                            <img class="img-modal" src="{% static 'main/images/Wed-photo-mar-phil.jpg' %}">
+                                                            <div class="modal-header">
+                                                                <h2 class="modal-h2">Анкета гостя</h2>
+                                                            </div>
+                                                            <div class="modal-body">
+                                                                <p style="font-weight: 600; font-size: 18px;">Заполните, пожалуйста, форму, чтобы мы знали,<br>что вы еще не уверены в своём решении</p>
+                                                                <form method='post'>
+                                                                    {% csrf_token %}
+                                                                    {{ dataLater.form.name }}
+                                                                    {{ dataLater.form.answer }}
+                                                                    <div class="required-block-2">
+                                                                        <span style="font-family: Roboto; font-weight: 500; color: ghostwhite;" class="required-text">Пожалуйста, заполните все обязательные поля</span>
+                                                                    </div>
+                                                                    <button style="margin-top: 2rem;" class="btn-to-confirm-4__tgl btn-to-confirm-5" type="submit">
+                                                                        <span style="font-size: 20px; font-weight: 400; color: #1d1c1c;" class="tgl-text">Отправить</span>
+                                                                    </button>
+                                                                    <script src={% static 'main/js/buttons.js' %} defer></script>
+                                                                </form>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flex-center btn-2">
+                                        <div style="margin-bottom: 40px; position: relative;" class="btn-container">
+                                            <button type="button" style="color: #1d1c1c;" class="text-center btn-to-confirm-3__tgl" data-bs-toggle="modal" data-bs-target="#exampleModal-3">
+                                                <span class="tgl-text">Не смогу прийти</span>
+                                            </button>
+                                            <div class="modal fade" id="exampleModal-3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                <a id="btn-close-s" type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></a>
+                                                <div class="modal-navbar">
+                                                    <a id="btn-close-s" type="button" class="btn-close off" data-bs-dismiss="modal" aria-label="Close"></a>
+                                                </div>
+                                                <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+                                                    <div class="modal-w modal-dialog">
+                                                        <div class="modal-content">
+                                                            <img class="img-modal" src="{% static 'main/images/Wed-photo-mar-phil.jpg' %}">
+                                                            <div class="modal-header">
+                                                                <h2 class="modal-h2">Анкета гостя</h2>
+                                                            </div>
+                                                            <div class="modal-body">
+                                                                <p style="font-weight: 600; font-size: 18px;">Заполните, пожалуйста, форму, чтобы мы знали,<br>что у вас не получится прийти</p>
+                                                                <form  method="post">
+                                                                    {% csrf_token %}
+                                                                    {{ dataAbsence.form.name }}
+                                                                    <div class="required-block-3">
+                                                                        <span style="font-family: Roboto; font-weight: 500; color: ghostwhite;" class="required-text">Пожалуйста, заполните все обязательные поля</span>
+                                                                    </div>
+                                                                    <button style="margin-top: 2rem;" class="btn-to-confirm-4__tgl btn-to-confirm-6" type="submit">
+                                                                        <span style="font-size: 20px; font-weight: 400; color: #1d1c1c;" class="tgl-text">Отправить</span>
+                                                                    </button>
+                                                                    <script src={% static 'main/js/buttons.js' %} defer></script>
+                                                                </form>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+        <script src="{% static 'main/js/modal-window.js' %}" defer></script>
+    </section>
+
+    <footer>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="timer-days text-center">
+                        <h1 class="text-center main-text main-font">Обратный отсчёт</h1>
+                        <p class="footer-text">До нашей свадьбы осталось...</p>
+                        <div class="timer">
+                            <div class="timer__items">
+                                <div class="timer__item timer__days">00</div>
+                                <div class="timer__item timer__hours">00</div>
+                                <div class="timer__item timer__minutes">00</div>
+                                <div class="timer__item timer__seconds">00</div>
+                            </div>
+                            <script>
+                                document.addEventListener('DOMContentLoaded', function () {
+                                    const deadline = new Date(2024, 7, 10);
+                                    let timerId = null;
+                                    function declensionNum(num, words) {
+                                        return words[(num % 100 > 4 && num % 100 < 20) ? 2 : [2, 0, 1, 1, 1, 2][(num % 10 < 5) ? num % 10 : 5]];
+                                    }
+                                    // вычисляем разницу дат и устанавливаем оставшееся времени в качестве содержимого элементов
+                                    function countdownTimer() {
+                                        const diff = deadline - new Date();
+                                        if (diff <= 0) {
+                                            clearInterval(timerId);
+                                        }
+                                        const days = diff > 0 ? Math.floor(diff / 1000 / 60 / 60 / 24) : 0;
+                                        const hours = diff > 0 ? Math.floor(diff / 1000 / 60 / 60) % 24 : 0;
+                                        const minutes = diff > 0 ? Math.floor(diff / 1000 / 60) % 60 : 0;
+                                        const seconds = diff > 0 ? Math.floor(diff / 1000) % 60 : 0;
+                                        $days.textContent = days < 10 ? '0' + days : days;
+                                        $hours.textContent = hours < 10 ? '0' + hours : hours;
+                                        $minutes.textContent = minutes < 10 ? '0' + minutes : minutes;
+                                        $seconds.textContent = seconds < 10 ? '0' + seconds : seconds;
+                                        $days.dataset.title = declensionNum(days, ['день', 'дня', 'дней']);
+                                        $hours.dataset.title = declensionNum(hours, ['час', 'часа', 'часов']);
+                                        $minutes.dataset.title = declensionNum(minutes, ['минута', 'минуты', 'минут']);
+                                        $seconds.dataset.title = declensionNum(seconds, ['секунда', 'секунды', 'секунд']);
+                                    }
+                                    // получаем элементы, содержащие компоненты даты
+                                    const $days = document.querySelector('.timer__days');
+                                    const $hours = document.querySelector('.timer__hours');
+                                    const $minutes = document.querySelector('.timer__minutes');
+                                    const $seconds = document.querySelector('.timer__seconds');
+                                    // вызываем функцию countdownTimer
+                                    countdownTimer();
+                                    // вызываем функцию countdownTimer каждую секунду
+                                    timerId = setInterval(countdownTimer, 1000);
+                                });
+                            </script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p style="font-weight: 600; font-size: 18px; position: relative; margin-top: 8rem; margin-left: 1rem;">© 2024 x1cex (mechano146@gmail.com)</p>
+    </footer>
+
+    <div class="nav-filter " id="navbar-filter"></div>
+
+    <script src="{% static 'main/js/adaptive.js' %}" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</body>
+</html>
