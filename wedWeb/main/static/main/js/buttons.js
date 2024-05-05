@@ -1,6 +1,6 @@
 var checkbox = document.querySelector(".radio-btn-1 input");
 var checkboxSecond = document.querySelector(".radio-btn-2 input");
-var checkboxValue = ", Вино белое";
+var checkboxValue = "Вино белое";
 var button = document.querySelector(".btn-to-confirm-4__tgl");
 var input = document.getElementById("text-name");
 var buttonSecond = document.querySelector(".btn-to-confirm-5");
@@ -36,18 +36,25 @@ document.querySelector(".checkbox-1 input").addEventListener("click", function()
     if (checkboxValue.includes(", Вино белое")) {
         checkboxValue = checkboxValue.replace(", Вино белое", "");
         document.querySelector(".hid-checkbox input").setAttribute("value", checkboxValue);
-    }else {
-        checkboxValue += ", Вино белое";
+    } else if (checkboxValue.includes("Вино белое")) {
+        checkboxValue = checkboxValue.replace("Вино белое", "");
+        document.querySelector(".hid-checkbox input").setAttribute("value", checkboxValue);
+    } else {
+        checkboxValue += checkboxValue == "" ? "Вино белое" : ", Вино белое";
         document.querySelector(".hid-checkbox input").setAttribute("value", checkboxValue);
     }
 });
 
 document.querySelector(".checkbox-2 input").addEventListener("click", function(){
-    if (checkboxValue.includes("Вино красное")) {
+    if (checkboxValue.includes(", Вино красное")) {
+        checkboxValue = checkboxValue.replace(", Вино красное", "");
+        document.querySelector(".hid-checkbox input").setAttribute("value", checkboxValue);
+    } else if (checkboxValue.includes("Вино красное")) {
         checkboxValue = checkboxValue.replace("Вино красное", "");
         document.querySelector(".hid-checkbox input").setAttribute("value", checkboxValue);
-    }else {
-        checkboxValue += "Вино красное";
+    }
+    else {
+        checkboxValue += checkboxValue == "" ? "Вино красное" : ", Вино красное";
         document.querySelector(".hid-checkbox input").setAttribute("value", checkboxValue);
     }
 });
@@ -56,18 +63,26 @@ document.querySelector(".checkbox-3 input").addEventListener("click", function()
     if (checkboxValue.includes(", Шампанское")) {
         checkboxValue = checkboxValue.replace(", Шампанское", "");
         document.querySelector(".hid-checkbox input").setAttribute("value", checkboxValue);
-    }else {
-        checkboxValue += ", Шампанское";
+    } else if (checkboxValue.includes("Шампанское")) {
+        checkboxValue = checkboxValue.replace("Шампанское", "");
+        document.querySelector(".hid-checkbox input").setAttribute("value", checkboxValue);
+    }
+    else {
+        checkboxValue += checkboxValue == "" ? "Шампанское" : ", Шампанское";
         document.querySelector(".hid-checkbox input").setAttribute("value", checkboxValue);
     }
 });
 
-document.querySelector(".checkbox-4 input").addEventListener("click", function(){
+document.querySelector(".checkbox-4 input").addEventListener("click", function() {
     if (checkboxValue.includes(", Крепкие напитки")) {
         checkboxValue = checkboxValue.replace(", Крепкие напитки", "");
         document.querySelector(".hid-checkbox input").setAttribute("value", checkboxValue);
-    }else {
-        checkboxValue += ", Крепкие напитки";
+    } else if (checkboxValue.includes("Крепкие напитки")) {
+        checkboxValue = checkboxValue.replace("Крепкие напитки", "");
+        document.querySelector(".hid-checkbox input").setAttribute("value", checkboxValue);
+    } 
+    else {
+        checkboxValue += checkboxValue == "" ? "Крепкие напитки" : ", Крепкие напитки";
         document.querySelector(".hid-checkbox input").setAttribute("value", checkboxValue);
     }
 });
@@ -76,8 +91,12 @@ document.querySelector(".checkbox-5 input").addEventListener("click", function()
     if (checkboxValue.includes(", Алкоголь пить не буду")) {
         checkboxValue = checkboxValue.replace(", Алкоголь пить не буду", "");
         document.querySelector(".hid-checkbox input").setAttribute("value", checkboxValue);
-    }else {
-        checkboxValue += ", Алкоголь пить не буду";
+    } else if (checkboxValue.includes("Алкоголь пить не буду")) {
+        checkboxValue = checkboxValue.replace("Алкоголь пить не буду", "");
+        document.querySelector(".hid-checkbox input").setAttribute("value", checkboxValue);
+    }
+    else {
+        checkboxValue += checkboxValue == "" ? "Алкоголь пить не буду" : ", Алкоголь пить не буду";
         document.querySelector(".hid-checkbox input").setAttribute("value", checkboxValue);
     }
 });

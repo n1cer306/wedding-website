@@ -44,6 +44,12 @@ a {
     text-decoration: none;
 }
 
+
+p,
+a {
+    font-family: 'Roboto', 'normal';
+}
+
 footer {
     margin-top: 6rem;
 }
@@ -56,17 +62,143 @@ header {
 
 /* end Base settings */
 
-.footer-text {
-    font-weight: 600;
-    font-size: 22px;
-    margin-top: 5rem;
-    margin-bottom: 2rem;
+/* main block */
+.main-text {
+    font-size: 50px;
+}
+
+.main-font {
+    font-family: 'Pacifico', 'normal';
 }
 
 .ad-els {
     display: none;
 }
 
+.name-text {
+    font-size: 50px;
+}
+
+.img-header {
+    background-image: url(../images/bg-image/blue-flowers.jpg);
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    top: -1.5rem;
+}
+
+.pos-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 12rem;
+}
+
+.main-image {
+    width: 450px;
+    height: 550px;
+    overflow: hidden;
+    position: relative;
+    bottom: 1.55rem;
+    left: 0.8rem;
+}
+
+.main-image img {
+    border: 1px 0 solid;
+    border-radius: 32px;
+    width: 400px;
+    height: 550px;
+}
+
+.border-text-name {
+    width: 400px;
+    height: 550px;
+    overflow: hidden;
+    position: relative;
+    bottom: 1.55rem;
+    right: 0.8rem;
+    border: 1px rgb(160, 160, 160) solid;
+    border-radius: 32px;
+}
+
+.marriage-img {
+    width: 500px;
+    height: 300px;
+    overflow: hidden;
+    border: 1px 0 solid;
+    border-radius: 16px;
+}
+
+.pos-text-1 {
+    position: relative;
+    top: -3rem;
+}
+
+.second-text {
+    font-family: 'Roboto', 'normal';
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.pos-text-2 {
+    margin-top: 8.5rem;
+}
+
+.pos-text-3 {
+    display: none;
+}
+
+.text-name-container {
+    position: relative;
+    top: 10rem;
+}
+
+.nav {
+    animation-duration: 2s;
+    animation-name: fadeInUp;
+}
+
+.nav li>a {
+    color: ghostwhite;
+    transition: all 0.5s ease;
+    font-family: 'Roboto', 'normal';
+}
+
+.nav li>a:hover {
+    color: rgb(245, 167, 138);
+    transition: all 0.5s ease;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-position .nav-item .nav-link {
+    color: #1d1c1c;
+    background: 0 0;
+}
+
+.nav-position #main-page {
+    color: #1d1c1c;
+}
+/* main block end */
+
+/* invation block */
+.invation {
+    margin-top: 6rem;
+}
+
+.invation-text {
+    font-family: 'Roboto', 'normal';
+    font-weight: 600;
+    font-size: 30px;
+    margin-top: 4rem;
+}
+/* invation block end */
+
+/* wedding-date block */
 .calendar-image {
     height: 500px;
     width: 350px;
@@ -104,42 +236,54 @@ header {
     margin-left: 2rem;
 }
 
-.main-text {
-    font-size: 50px;
-}
-
-.main-font {
-    font-family: 'Pacifico', 'normal';
-}
-
-.name-text {
-    font-size: 50px;
-}
-
-.img-header {
-    background-image: url(../images/bg-image/blue-flowers.jpg);
-    height: 100vh;
-    width: 100%;
+.date-position {
+    margin-top: 12rem;
     position: relative;
-    top: -1.5rem;
+    top: -6rem;
 }
 
-.pos-img {
+.date-container {
+    font-size: 30px;
+}
+
+.calendar-container {
     display: flex;
     justify-content: center;
-    align-items: center;
-    position: relative;
-    top: 12rem;
 }
 
-.main-image {
-    width: 450px;
-    height: 550px;
-    overflow: hidden;
-    position: relative;
-    bottom: 1.55rem;
-    /* border: 1px 0 solid;
-    border-radius: 300px 300px 0px 0px; */
+.calendar-day {
+    font-size: 50px;
+    margin: 0 4rem;
+    padding: 2rem 3.4rem;
+    border: 1px #1d1c1c solid;
+    border-radius: 8px;
+}
+
+.calendar-month {
+    font-size: 50px;
+    margin: 0 2rem;
+    padding: 2rem 3.4rem;
+    border: 1px #1d1c1c solid;
+    border-radius: 8px;
+}
+
+.calendar-year {
+    font-size: 50px;
+    margin: 0 4rem;
+    padding: 2rem 1.5rem;
+    border: 1px #1d1c1c solid;
+    border-radius: 8px;
+}
+/* wedding-date block end */
+
+/* place-of-reg block */
+
+/* place-of-reg block end */
+.footer-text {
+    font-weight: 600;
+    font-size: 22px;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
 }
 
 .location-image-regular.no-wide {
@@ -162,31 +306,6 @@ header {
     margin-right: 4.5rem;
 }
 
-.main-image img {
-    border: 1px 0 solid;
-    border-radius: 32px;
-    width: 450px;
-    height: 550px;
-}
-
-.border-text-name {
-    width: 450px;
-    height: 550px;
-    overflow: hidden;
-    position: relative;
-    bottom: 1.55rem;
-    border: 1px rgb(160, 160, 160) solid;
-    border-radius: 32px;
-}
-
-.marriage-img {
-    width: 500px;
-    height: 300px;
-    overflow: hidden;
-    border: 1px 0 solid;
-    border-radius: 16px;
-}
-
 .location-image-size {
     width: 350px;
     height: 450px;
@@ -206,34 +325,6 @@ header {
     align-items: center;
 }
 
-.invation {
-    margin-top: 6rem;
-}
-
-.pos-text-1 {
-    position: relative;
-    top: -3rem;
-}
-
-.second-text {
-    font-family: 'Roboto', 'normal';
-    font-size: 25px;
-    font-weight: 500;
-}
-
-.pos-text-2 {
-    margin-top: 8.5rem;
-}
-
-.pos-text-3 {
-    display: none;
-}
-
-.text-name-container {
-    position: relative;
-    top: 10rem;
-}
-
 .modal-content {
     border-radius: 0;
     border: 0;
@@ -246,7 +337,7 @@ header {
 
 .img-modal {
     width: 550px;
-    height: 700px;
+    height: 800px;
 }
 
 .modal-h2 {
@@ -256,11 +347,6 @@ header {
     font-weight: bold;
     font-family: 'Roboto', 'normal';
     font-size: 30px;
-}
-
-.nav {
-    animation-duration: 2s;
-    animation-name: fadeInUp;
 }
 
 .main-quest {
@@ -287,44 +373,16 @@ header {
     margin-top: 4.5rem;
 }
 
-.nav li>a {
-    color: ghostwhite;
-    transition: all 0.5s ease;
-    font-family: 'Roboto', 'normal';
-}
-
-.nav li>a:hover {
-    color: rgb(245, 167, 138);
-    transition: all 0.5s ease;
-}
-
-p,
-a {
-    font-family: 'Roboto', 'normal';
-}
-
 .timer__items {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.invation-text {
-    font-family: 'Roboto', 'normal';
-    font-weight: 600;
-    font-size: 30px;
-    margin-top: 4rem;
-}
-
 #btn-close-s {
     float: right;
     width: 50px;
     color: ghostwhite;
-}
-
-.navbar {
-    display: flex;
-    justify-content: center;
 }
 
 .timeline ul {
@@ -537,37 +595,6 @@ a {
     margin-top: 10rem;
 }
 
-.date-position {
-    margin-top: 12rem;
-    position: relative;
-    top: -6rem;
-}
-
-.date-container {
-    font-size: 30px;
-}
-
-.nav-position .nav-item .nav-link {
-    color: #1d1c1c;
-    background: 0 0;
-}
-
-.nav-position #main-page {
-    color: #1d1c1c;
-}
-
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        top: -50px;
-    }
-
-    to {
-        opacity: 1;
-        top: 0;
-    }
-}
-
 .heart-anm {
     animation: heartAnim 2s ease 0s infinite normal forwards;
     width: 50px;
@@ -589,35 +616,6 @@ a {
     top: 5px;
 }
 
-.calendar-container {
-    display: flex;
-    justify-content: center;
-}
-
-.calendar-day {
-    font-size: 50px;
-    margin: 0 4rem;
-    padding: 2rem 3.4rem;
-    border: 1px #1d1c1c solid;
-    border-radius: 8px;
-}
-
-.calendar-month {
-    font-size: 50px;
-    margin: 0 2rem;
-    padding: 2rem 3.4rem;
-    border: 1px #1d1c1c solid;
-    border-radius: 8px;
-}
-
-.calendar-year {
-    font-size: 50px;
-    margin: 0 4rem;
-    padding: 2rem 1.5rem;
-    border: 1px #1d1c1c solid;
-    border-radius: 8px;
-}
-
 .pr-sttgs {
     position: relative;
     left: 1rem;
@@ -631,6 +629,7 @@ a {
     animation: pointerAnim 6s ease 0s infinite normal forwards;
 }
 
+/* keyframes block */
 @keyframes pointerAnim {
 
     0%,
@@ -683,3 +682,16 @@ a {
     }
 
 }
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        top: -50px;
+    }
+
+    to {
+        opacity: 1;
+        top: 0;
+    }
+}
+/* animation block end */

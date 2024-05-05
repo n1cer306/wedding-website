@@ -14,6 +14,13 @@ btnMenu.addEventListener("click", function (e) {
     toggleMenu();
 });
 
+const removeElements = () => {
+    document.getElementById("my-modal").classList.remove("active");
+    document.getElementById("navbar-filter").classList.remove("show");
+    document.getElementById("navbar-filter").classList.remove("modal-backdrop");
+    document.getElementById("body-filter").classList.remove("active");
+}
+
 document.addEventListener("click", function (e) {
     const target = e.target;
     const its_menu = target == menu || menu.contains(target);
@@ -27,10 +34,7 @@ document.addEventListener("click", function (e) {
 
 if (document.documentElement.clientWidth < 500){
     document.querySelector(".nav-pills").addEventListener("click", function() {
-        document.getElementById("my-modal").classList.remove("active");
-        document.getElementById("navbar-filter").classList.remove("show");
-        document.getElementById("navbar-filter").classList.remove("modal-backdrop");
-        document.getElementById("body-filter").classList.remove("active");
+        removeElements();
     })
 }
 
@@ -41,17 +45,11 @@ document.getElementById("open-model-btn").addEventListener("click", function(){
 });
 
 document.getElementById("close-my-model-btn").addEventListener("click", function(){
-    document.getElementById("my-modal").classList.remove("active");
-    document.getElementById("navbar-filter").classList.remove("show");
-    document.getElementById("navbar-filter").classList.remove("modal-backdrop");
-    document.getElementById("body-filter").classList.remove("active");
+    removeElements();
 });
 
 window.addEventListener('keydown', (e) => {
     if (e.key == "Escape") {
-        document.getElementById("my-modal").classList.remove("active");
-        document.getElementById("navbar-filter").classList.remove("show");
-        document.getElementById("navbar-filter").classList.remove("modal-backdrop");
-        document.getElementById("body-filter").classList.remove("active");
+        removeElements();
     }
 });

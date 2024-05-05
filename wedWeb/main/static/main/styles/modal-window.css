@@ -1,3 +1,4 @@
+/* confirm block -> forms */
 .mcui-checkbox,
 .mcui-radio {
     display: flex;
@@ -245,17 +246,9 @@
     width: 30rem;
     background-color: rgb(153, 43, 43);
 }
+/* block end */
 
-/* .required-block-3.on,
-.required-block-2.on {
-    padding-top: 1rem;
-    margin-top: 3rem;
-    display: block;
-    height: 4rem;
-    width: 28rem;
-    background-color: rgb(153, 43, 43);
-} */
-
+/* confirm block -> modal window */
 .check-valid.on {
     position: absolute;
     top: 13rem;
@@ -307,3 +300,5 @@
 .modal-w {
     height: 100%;
 }
+
+/* block end */

@@ -1,3 +1,4 @@
+/* footer timer block */
 .timer__items {
   display: flex;
   font-size: 48px;
@@ -30,3 +31,29 @@
   position: absolute;
   right: -15px;
 }
+/* footer timer endblock */
+
+/* confirm block */
+.modal-body__get.disable {
+  display: none;
+}
+
+.modal-body__get {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  background-color: burlywood;
+  height: 6rem;
+}
+
+.modal-body__get span {
+  font-size: 23px;
+  font-family: 'Roboto';
+  font-weight: bold;
+  color: black;
+}
+/* confirm endblock */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
